@@ -1,8 +1,8 @@
 replicaCount: 1
 
 image:
-  registry: ghcr.io
-  repository: victoriametrics-community/mcp-victoriametrics
+  registry: ""
+  repository: dmarshaltu/mcp-vicrorialogs
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""

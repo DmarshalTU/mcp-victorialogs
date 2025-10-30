@@ -5,16 +5,21 @@
 FROM golang:1.25-alpine AS builder
 WORKDIR /app
 
-# Install Git for potential dependencies and ca-certificates
-RUN apk add --no-cache git ca-certificates
+# Install build prerequisites
+RUN apk add --no-cache ca-certificates build-base
 
 # Copy source
-COPY go.mod go.sum ./
 COPY . .
 
-# Download dependencies and build
-RUN go mod download
-RUN go build -o mcp-victoriametrics cmd/mcp-victoriametrics/main.go
+# Build with vendored deps and static binary
+ARG TARGETOS
+ARG TARGETARCH
+ENV CGO_ENABLED=0 \
+    GOOS=${TARGETOS} \
+    GOARCH=${TARGETARCH}
+RUN go env -w GOTOOLCHAIN=local \
+ && go mod vendor \
+ && go build -trimpath -ldflags "-s -w" -mod=vendor -o /app/mcp-victoriametrics ./cmd/mcp-victoriametrics
 
 # Runtime stage
 FROM alpine:latest
