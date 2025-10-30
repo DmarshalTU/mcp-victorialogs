@@ -45,7 +45,7 @@ mcp:
 vm:
   cloudAPIKey: ""
   type: single
-  entrypoint: ""
+  entrypoint: "http://localhost:8428"
   bearerToken: ""
   headers: []
 
