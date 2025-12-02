@@ -1,9 +1,9 @@
 module github.com/VictoriaMetrics-Community/mcp-victoriametrics
 
-go 1.25.3
+go 1.25.4
 
 require (
-	github.com/VictoriaMetrics/VictoriaMetrics v1.128.0
+	github.com/VictoriaMetrics/VictoriaMetrics v1.131.0
 	github.com/VictoriaMetrics/metrics v1.40.2
 	github.com/VictoriaMetrics/metricsql v0.84.8
 	github.com/VictoriaMetrics/victoriametrics-cloud-api-go v0.0.3
@@ -18,7 +18,7 @@ require (
 	github.com/RoaringBitmap/roaring/v2 v2.10.0 // indirect
 	github.com/VictoriaMetrics/VictoriaLogs v1.36.2-0.20251008164716-21c0fb3de84d // indirect
 	github.com/VictoriaMetrics/easyproto v0.1.4 // indirect
-	github.com/VictoriaMetrics/fastcache v1.13.0 // indirect
+	github.com/VictoriaMetrics/fastcache v1.13.2 // indirect
 	github.com/VividCortex/ewma v1.2.0 // indirect
 	github.com/bahlo/generic-list-go v0.2.0 // indirect
 	github.com/bits-and-blooms/bitset v1.24.0 // indirect
@@ -64,7 +64,7 @@ require (
 	github.com/valyala/fastjson v1.6.4 // indirect
 	github.com/valyala/fastrand v1.1.0 // indirect
 	github.com/valyala/fasttemplate v1.2.2 // indirect
-	github.com/valyala/gozstd v1.23.2 // indirect
+	github.com/valyala/gozstd v1.24.0 // indirect
 	github.com/valyala/histogram v1.2.0 // indirect
 	github.com/valyala/quicktemplate v1.8.0 // indirect
 	github.com/wk8/go-ordered-map/v2 v2.1.8 // indirect
@@ -75,10 +75,10 @@ require (
 	gitlab.com/golang-commonmark/mdurl v0.0.0-20191124015652-932350d1cb84 // indirect
 	gitlab.com/golang-commonmark/puny v0.0.0-20191124015043-9f83538fa04f // indirect
 	go.etcd.io/bbolt v1.4.3 // indirect
-	golang.org/x/net v0.46.0 // indirect
+	golang.org/x/net v0.47.0 // indirect
 	golang.org/x/oauth2 v0.32.0 // indirect
-	golang.org/x/sys v0.37.0 // indirect
-	golang.org/x/text v0.30.0 // indirect
+	golang.org/x/sys v0.38.0 // indirect
+	golang.org/x/text v0.31.0 // indirect
 	google.golang.org/protobuf v1.36.10 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
